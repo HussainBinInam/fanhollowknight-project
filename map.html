@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Map </title>
+      <script src="index.js"></script>
+      <link rel="stylesheet" href="index.css">
+   </head>
+   <body>
+      <section class= "box">
+          <header>
+             header
+          </header>
+          <nav>
+            <button onclick="document.location='index.html'">Home</button>
+            <button onclick="document.location='characters.html'">Characters</button>
+            <button onclick="document.location='map.html'">Map</button>
+            <button onclick="document.location='bosses.html'">Bosses</button>
+            <button onclick="document.location='artwork.html'">Art Work</button>
+          </nav>
+          <section style="background-color: black;">
+               <img src="/pictures/map.jpg" alt="Hollow Knight world Map" usemap="#mapname" onmousemove="showCoords(event)">
+            
+            <map name="mapname">
+                  
+               <area shape="rect" coords="440,342,743,480" href="https://www.google.com/" alt="">
+             </map>
+            <p id="demo" style="color: aliceblue; align-self: center;"></p>
+            <script>
+               function showCoords(event) {
+                   var x = event.clientX;
+                   var y = event.clientY;
+                   var coords = "X coords: " + x + ", Y coords: " + y;
+                   console.log (coords);
+               }
+           </script>
+            </section>
+          <footer>
+             footer
+          </footer>
+      </section>
+   </body>
+</html>
